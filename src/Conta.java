@@ -1,11 +1,17 @@
 
 class Conta {
 	private int numero;
-	private double saldo = 0;
+	private double saldo;
 	private double limite;
 	private Agencia agencia;
 	private Cliente titular;
 
+	Conta (Cliente cliente, double limite){
+		this.titular = cliente;
+		this.saldo = 0;
+		this.limite = limite;
+	}
+	
 	public void setNumero(int num) {
 		this.numero = num;
 	}	
@@ -22,11 +28,11 @@ class Conta {
 		return this.agencia;
 	}
 	
-	public void setTutular(Cliente cliente) {
+	public void setTitular(Cliente cliente) {
 		this.titular = cliente;
 	}
 	
-	public Cliente getTutular() {
+	public Cliente getTitular() {
 		return this.titular;
 		
 	}

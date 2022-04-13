@@ -1,6 +1,6 @@
 
 public class Agencia {
-	int codigo;
+	private int codigo;
 	
 	Agencia(int cod){
 		this.codigo = cod;
