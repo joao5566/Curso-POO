@@ -7,7 +7,7 @@ public class Teste {
 		cli.setNome("João Vitor Rodrigues");
 		Conta c = new Conta(cli,2100);
 		
-		System.out.println("Codigo da Agencia: ");
+		System.out.println("Nome do cliente: " + cli.getNome()+" Limite: "+c.getLimite());
 	}
 
 }
