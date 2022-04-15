@@ -5,9 +5,9 @@ public class Teste {
 		
 		Cliente cli = new Cliente();
 		cli.setNome("João Vitor Rodrigues");
-		Conta c = new Conta(cli,2100);
+		Conta c = new Conta(cli);
 		
-		System.out.println("Nome do cliente: " + cli.getNome()+" Limite: "+c.getLimite());
+		System.out.println("Nome do cliente: " + cli.getNome());
 	}
 
 }

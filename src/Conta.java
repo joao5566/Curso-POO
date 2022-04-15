@@ -2,14 +2,12 @@
 class Conta {
 	private int numero;
 	private double saldo;
-	private double limite;
 	private Agencia agencia;
 	private Cliente titular;
 
-	Conta (Cliente cliente, double limite){
+	Conta (Cliente cliente){
 		this.titular = cliente;
 		this.saldo = 0;
-		this.limite = limite;
 	}
 	
 	public void setNumero(int num) {
@@ -36,15 +34,7 @@ class Conta {
 		return this.titular;
 		
 	}
-	
-	public void setLimite(double limite){
-		this.limite = limite;
-	}
-	
-	public double getLimite() {
-		return this.limite;
 		
-	}
 	
 	void deposita(double valor) {
 		this.saldo += valor;
