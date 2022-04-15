@@ -1,36 +1,36 @@
 
 class Conta {
-	private int numero;
-	private double saldo;
-	private Agencia agencia;
-	private Cliente titular;
+	protected int numero;
+	protected double saldo;
+	protected Agencia agencia;
+	protected Cliente titular;
 
 	Conta (Cliente cliente){
 		this.titular = cliente;
 		this.saldo = 0;
 	}
 	
-	public void setNumero(int num) {
+	protected void setNumero(int num) {
 		this.numero = num;
 	}	
 	
-	public int getNumero() {
+	protected int getNumero() {
 		return this.numero;
 	}
 	
-	public void setAgenticia(Agencia agen) {
+	protected void setAgenticia(Agencia agen) {
 		this.agencia = agen;
 	}
 	
-	public Agencia getAgencia() {
+	protected Agencia getAgencia() {
 		return this.agencia;
 	}
 	
-	public void setTitular(Cliente cliente) {
+	protected void setTitular(Cliente cliente) {
 		this.titular = cliente;
 	}
 	
-	public Cliente getTitular() {
+	protected Cliente getTitular() {
 		return this.titular;
 		
 	}
@@ -56,7 +56,7 @@ class Conta {
 		return this.saldo;
 		
 	}
-	public boolean transferir(Conta destino,double valor) {
+	protected boolean transferir(Conta destino,double valor) {
 		boolean sacou =this.saca(valor);
 		
 		if(sacou == false) {
