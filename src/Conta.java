@@ -35,7 +35,6 @@ class Conta {
 		
 	}
 		
-	
 	void deposita(double valor) {
 		this.saldo += valor;
 		
@@ -68,6 +67,11 @@ class Conta {
 			
 		}
 		
+		
+	}
+	
+	public void imprimeExtradoCompleto() {
+		//Aqui implementa o metodo 
 		
 	}
 	
