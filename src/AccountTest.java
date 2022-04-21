@@ -8,7 +8,7 @@ public class AccountTest
 {
 	// cria dois objetos Account
 	Account account1 = new Account("Jane Green");
-	Account account2 = new Account("John Blue");
+	Account account2 = new Account("John");
 
 	// exibe o valor inicial de nome para cada Account
 	System.out.printf("account1 name is: %s%n", account1.getName());
