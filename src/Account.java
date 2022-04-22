@@ -25,6 +25,14 @@ public class Account
 			balance = balance + depositAmount;//add it to the balance	
 	}
 
+	public void displayAccount(String name)
+	{
+		this.name = name;
+		System.out.println("Account name: "+ name);
+		System.out.println("balance: "+ this.getBalance());
+
+	}
+
 	// method to set the name on the object
 	public void setname(String name) 
 	{
